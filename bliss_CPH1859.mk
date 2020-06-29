@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common LOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Inherit from oppo CPH1861
 $(call inherit-product, device/oppo/CPH1859/device.mk)
@@ -28,11 +28,21 @@ $(call inherit-product, device/oppo/CPH1859/device.mk)
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
+
+# Specify arch for gapps
+TARGET_GAPPS_ARCH=arm64
+
+# Bliss 
+BLISS_BUILDTYPE := OFFICIAL
+BLISS_DEVELOPER := Ayush
+
+
+
 # Bootanimation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2160
 
-PRODUCT_NAME := lineage_CPH1859
+PRODUCT_NAME := bliss_CPH1859
 PRODUCT_DEVICE := CPH1859
 PRODUCT_MANUFACTURER := OPPO
 PRODUCT_BRAND := OPPO
@@ -46,6 +56,6 @@ TARGET_VENDOR_DEVICE_NAME := CPH1859
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="CPH1859" \
     PRODUCT_NAME="CPH1859" \
-    PRIVATE_BUILD_DESC="full_oppo6771_17065-user 9 PPR1.180610.011 eng.root.20200509.060522 release-keys"
+    PRIVATE_BUILD_DESC="coral-user 10 QQ3A.200605.001 6392402 release-keys"
 
-BUILD_FINGERPRINT := "OPPO/CPH1859/CPH1859:9/PPR1.180610.011/1587903909:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys"

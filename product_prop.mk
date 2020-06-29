@@ -1,6 +1,6 @@
 #
 # Copyright 2020 The Android Open Source Project
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020 The PixelExperience Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,16 +15,16 @@
 # limitations under the License.
 #
 
+# Camera
+PRODUCT_PRODUCT_PROPERTIES += \
+   persist.camera.HAL3.enabled=1
+
 #
 # System Properties for Realme 1: CPH1859
 #
 
 # LCD density
 ro.sf.lcd_density=480
-
-# Camera
-PRODUCT_PRODUCT_PROPERTIES += \
-persist.camera.HAL3.enabled=1
 
 # MediaTek
 ro.mediatek.chip_ver=S01
@@ -72,8 +72,6 @@ persist.vendor.radio.smart.data.switch=1
 persist.vendor.radio.terminal-based.cw=,disabled_tbcw
 persist.vendor.vilte_support=1
 persist.vendor.viwifi_support=1
-persist.vendor.volte_support=0
-persist.vendor.mtk.volte.enable=0
 
 # Modem
 ro.vendor.sim_refresh_reset_by_modem=1
@@ -189,3 +187,7 @@ dirac.path=/vendor/etc/dirac/17065
 ro.mtk_cam_stereo_camera_support=1
 ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
 ro.build.keystore.path=/sdcard/.lii/
+
+# Device Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.bliss.maintainer=Ayush

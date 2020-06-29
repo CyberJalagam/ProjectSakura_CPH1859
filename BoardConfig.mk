@@ -92,9 +92,6 @@ TARGET_USES_MKE2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
 AB_OTA_UPDATER := false
 
-# System Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system_prop.mk
-
 # Vendor
 TARGET_COPY_OUT_VENDOR := vendor
 
@@ -128,6 +125,9 @@ ifeq ($(HOST_OS),linux)
     WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= true
   endif
 endif
+
+# APEX image
+DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Exclude AudioFX
 TARGET_EXCLUDES_AUDIOFX := true

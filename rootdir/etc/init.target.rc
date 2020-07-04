@@ -29,3 +29,12 @@ on boot
     # OTG
     write /sys/devices/platform/odm/odm:oppo_charger/power_supply/usb/otg_switch 1
 
+service set_zram /vendor/bin/sh /system/etc/init/set_zram.sh
+    class late_start
+    disabled
+    user root
+    group system
+    oneshot
+
+on property:sys.boot_completed=1
+    start set_zram

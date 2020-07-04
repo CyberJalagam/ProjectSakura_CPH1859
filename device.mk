@@ -104,3 +104,7 @@ PRODUCT_COPY_FILES += \
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oppo/CPH1859/CPH1859-vendor.mk)
+
+# zRam
+PRODUCT_PACKAGES += \
+    set_zram.sh

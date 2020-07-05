@@ -31,6 +31,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Bootanimation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2160
+TARGET_BOOT_ANIMATION_RES := 1080
+
 
 PRODUCT_NAME := lineage_CPH1859
 PRODUCT_DEVICE := CPH1859

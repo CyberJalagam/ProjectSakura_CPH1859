@@ -6,3 +6,6 @@
 
 # Touchpanel
 /proc/touchpanel/tp_fw_update        u:object_r:proc_touchpanel:s0
+
+# Vtservice
+/system/bin/vtservice   u:object_r:vtservice_exec:s0

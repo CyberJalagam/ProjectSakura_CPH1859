@@ -66,9 +66,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.1-service.clearkey \
     android.hardware.drm@1.1-service.widevine
 
-# Camera
+# GCam Go
 PRODUCT_PACKAGES += \
-    Snap
+    GCam
 
 # HIDL
 PRODUCT_PACKAGES += \

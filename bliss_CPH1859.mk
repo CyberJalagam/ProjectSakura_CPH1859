@@ -29,9 +29,6 @@ $(call inherit-product, device/oppo/CPH1859/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 
-# Specify arch for gapps
-TARGET_GAPPS_ARCH=arm64
-
 # Bliss 
 BLISS_BUILDTYPE := OFFICIAL
 BLISS_DEVELOPER := Ayush
@@ -41,6 +38,7 @@ BLISS_DEVELOPER := Ayush
 # Bootanimation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2160
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_NAME := bliss_CPH1859
 PRODUCT_DEVICE := CPH1859

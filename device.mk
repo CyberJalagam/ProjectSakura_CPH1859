@@ -31,9 +31,6 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-bliss
-endif
 
 # Keyboard layout
 PRODUCT_COPY_FILES += \
@@ -60,8 +57,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.mt6771 \
     init.target.rc \
-    init.recovery.mt6771.rc \
-    init.recovery.usb.rc
+    set_zram.sh
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -89,22 +85,33 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
-# Trust
-PRODUCT_PACKAGES += \
-    lineage.trust@1.0-service
     
 # KPOC
 PRODUCT_PACKAGES += \
     libsuspend
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/google/pixel
 
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     $(LOCAL_PATH)/seccomp/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
 
+# Product properties
+-include $(LOCAL_PATH)/product_prop.mk
+
+# fstab
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/fstab.mt6771:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/fstab.mt6771
+
+# Manifest
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/manifest.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/vintf/manifest.xml
+
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oppo/CPH1859/CPH1859-vendor.mk)
 
-# zRam
-PRODUCT_PACKAGES += \
-    set_zram.sh

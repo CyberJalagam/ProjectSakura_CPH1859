@@ -1,7 +1,16 @@
 # android_device_oppo_CPH1859_ProjectSakura
-Project Sakura Device Tree for Realme 1. The 3GB variant has codename CPH1861 whereas the 4/6GB variants have codename CPH1859.
 
-STABILITY: STABLE
+##Project Sakura
+
+Device Tree for Realme 1. The 3GB variant has codename CPH1861 whereas the 4/6GB variants have codename CPH1859.
+
+STATUS: STABLE
+
+Known Bugs:
+
+1* VoLTE
+
+2* SeLinux Premessive
 
 ### Spec Sheet
 Feature | Specification

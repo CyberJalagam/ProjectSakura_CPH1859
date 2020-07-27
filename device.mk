@@ -31,6 +31,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # Keyboard layout
 PRODUCT_COPY_FILES += \
@@ -70,6 +71,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GCam
 
+# Firefox
+PRODUCT_PACKAGES += \
+    FirefoxLite
+
+# Removed Packages
+PRODUCT_PACKAGES += \
+    RemovePackages \
+    RemovePackages-1 \
+    RemovePackages-2 \
+    RemovePackages-3
+
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
@@ -107,9 +120,6 @@ PRODUCT_COPY_FILES += \
 # Product properties
 -include $(LOCAL_PATH)/product_prop.mk
 
-# fstab
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/fstab.mt6771:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/fstab.mt6771
 
 # Manifest
 PRODUCT_COPY_FILES += \

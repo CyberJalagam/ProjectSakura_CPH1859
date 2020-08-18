@@ -83,9 +83,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GCam
 
-# Firefox
+# Via
 PRODUCT_PACKAGES += \
-    FirefoxLite
+    Via
 
 # Removed Packages
 PRODUCT_PACKAGES += \

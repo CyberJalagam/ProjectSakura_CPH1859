@@ -193,3 +193,6 @@ ro.build.keystore.path=/sdcard/.lii/
 #Enable Surface Flinger
 PRODUCT_PROPERTY_OVERRIDES += \ 
 debug.sf.latch_unsignaled=1
+
+# Zygote preforking
+persist.device_config.runtime_native.usap_pool_enabled=true 

@@ -127,8 +127,6 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 # Network Routing
 TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE := true
 
-# Charger
-BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # Symbols
 TARGET_LD_SHIM_LIBS := /system/lib/libshowlogo.so|libshim_showlogo.so

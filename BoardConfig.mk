@@ -62,6 +62,8 @@ TARGET_SCREEN_WIDTH := 1080
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 TARGET_OTA_ALLOW_NON_AB := true
+BUILD_BROKEN_DUP_RULES := true
+
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.configfs=true androidboot.selinux=permissive

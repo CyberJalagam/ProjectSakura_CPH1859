@@ -108,3 +108,8 @@ on property:sys.boot_completed=1
 
     exec - root -- /system/bin/sh -c "settings put global airplane_mode_on 0"
     exec - root -- /system/bin/sh -c "am broadcast -a android.intent.action.AIRPLANE_MODE --ez state false"
+
+on property:sys.boot_completed=1
+    # force disable hw overlays to be true
+    exec - root -- /system/bin/sh -c "service call SurfaceFlinger 1008 i32 1" 
+

@@ -140,14 +140,5 @@ TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE := true
 # Symbols
 TARGET_LD_SHIM_LIBS := /system/lib/libshowlogo.so|libshim_showlogo.so
 
-# Vndk
-BOARD_VNDK_VERSION := current
-PRODUCT_EXTRA_VNDK_VERSIONS := 28
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 BUILD_WITHOUT_VENDOR := true
-
-# Will be used in future
-#TARGET_COPY_OUT_VENDOR := vendor
-#PRODUCT_VENDOR_MOVE_ENABLED := true
-#BOARD_VNDK_RUNTIME_DISABLE := true
-#PRODUCT_FULL_TREBLE_OVERRIDE := true

@@ -32,7 +32,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Bliss 
 BLISS_BUILDTYPE := OFFICIAL
 BLISS_DEVELOPER := Ayush
-
+BLISS_BUILD_VARIANT := vanilla
 
 
 # Bootanimation

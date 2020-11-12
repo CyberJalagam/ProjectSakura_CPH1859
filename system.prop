@@ -35,6 +35,7 @@ ro.mediatek.wlan.wsc=1
 # Graphics
 ro.opengles.version=196610
 debug.sf.disable_backpressure=1
+ro.hardware.egl=mali
 
 # Telephony
 ro.telephony.default_network=10,10

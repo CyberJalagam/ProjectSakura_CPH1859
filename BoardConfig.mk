@@ -77,8 +77,6 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 #TARGET_KERNEL_CLANG_COMPILE := true
 #TARGET_KERNEL_CLANG_VERSION := r353983d
 TARGET_BOARD_SUFFIX := _64
-#Useless in a11
-#TARGET_USES_64_BIT_BINDER := true
 TARGET_NO_KERNEL := false
 
 # Security patch level
@@ -122,7 +120,6 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 
-
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
@@ -132,7 +129,6 @@ SELINUX_IGNORE_NEVERALLOWS := true
 
 # Network Routing
 TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE := true
-
 
 # Vndk
 BOARD_VNDK_VERSION := current

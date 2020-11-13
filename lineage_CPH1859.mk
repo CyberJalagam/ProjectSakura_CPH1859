@@ -29,12 +29,6 @@ $(call inherit-product, device/oppo/CPH1859/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 
-# Bliss 
-BLISS_BUILDTYPE := OFFICIAL
-BLISS_DEVELOPER := Ayush
-BLISS_BUILD_VARIANT := vanilla
-
-
 # Bootanimation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2160

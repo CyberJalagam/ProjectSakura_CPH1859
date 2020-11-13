@@ -16,7 +16,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_CPH1859.mk
-
-COMMON_LUNCH_CHOICES += \
-    bliss_CPH1859-userdebug
+    $(LOCAL_DIR)/lineage_CPH1859.mk

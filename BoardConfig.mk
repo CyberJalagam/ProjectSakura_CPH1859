@@ -140,5 +140,7 @@ TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE := true
 # Symbols
 TARGET_LD_SHIM_LIBS := /system/lib/libshowlogo.so|libshim_showlogo.so
 
+# Vndk
+BOARD_VNDK_VERSION := current
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 BUILD_WITHOUT_VENDOR := true

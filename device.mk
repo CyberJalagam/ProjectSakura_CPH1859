@@ -151,6 +151,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     RcsService
 
+# ImsInit hack
+PRODUCT_PACKAGES += \
+    ImsInit
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oppo/CPH1859/CPH1859-vendor.mk)
 

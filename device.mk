@@ -148,6 +148,9 @@ PRODUCT_BOOT_JARS += \
     mediatek-telephony-base \
     mediatek-telephony-common
 
+PRODUCT_PACKAGES += \
+    RcsService
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oppo/CPH1859/CPH1859-vendor.mk)
 

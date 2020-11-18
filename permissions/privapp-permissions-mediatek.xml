@@ -4,18 +4,13 @@ This XML file declares which signature|privileged permissions should be granted 
 applications that come with the platform
 -->
 <permissions>
-    <privapp-permissions package="com.android.fmradio">
-        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
-        <permission name="android.permission.ACCESS_BROADCAST_RADIO"/>
-        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
-    </privapp-permissions>
-
     <privapp-permissions package="com.mediatek.connectivity">
         <permission name="android.permission.CONNECTIVITY_INTERNAL"/>
         <permission name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
         <permission name="android.permission.WRITE_APN_SETTINGS"/>
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.baidu.map.location">
@@ -28,6 +23,12 @@ applications that come with the platform
         <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.mediatek.location.lppe.main">
+        <permission name="android.permission.CHANGE_WIFI_STATE"/>
+        <permission name="android.permission.LOCATION_HARDWARE"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    </privapp-permissions>
+
     <privapp-permissions package="com.android.contacts">
         <permission name="android.permission.MODIFY_PHONE_STATE"/>
         <permission name="android.permission.CALL_PRIVILEGED"/>
@@ -36,10 +37,15 @@ applications that come with the platform
 
     <privapp-permissions package="com.mediatek.ims">
         <permission name="android.permission.READ_PRECISE_PHONE_STATE"/>
+        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
+        <permission name="android.permission.PACKET_KEEPALIVE_OFFLOAD"/>
+        <permission name="android.permission.CHANGE_WIFI_STATE"/>
+        <permission name="android.permission.NETWORK_SIGNAL_STRENGTH_WAKEUP"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.mediatek.simprocessor">
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
     </privapp-permissions>
 
     <privapp-permissions package="android.ext.services">
@@ -59,6 +65,7 @@ applications that come with the platform
         <permission name="android.permission.CALL_PRIVILEGED"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
         <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
         <permission name="android.permission.CREATE_USERS"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
     </privapp-permissions>
@@ -83,6 +90,7 @@ applications that come with the platform
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
         <permission name="android.permission.RECEIVE_STK_COMMANDS"/>
         <permission name="android.permission.USER_ACTIVITY"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.mediatek.carrierexpress">
@@ -109,6 +117,44 @@ applications that come with the platform
         <permission name="com.android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"/>
         <!-- Add reboot permission for subsidy lock request8 -->
         <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.MANAGE_DEBUGGING" />
+        <permission name="android.permission.CONTROL_VPN" />
+        <permission name="android.permission.START_TASKS_FROM_RECENTS" />
+        <permission name="android.permission.STATUS_BAR" />
+        <permission name="android.permission.GET_APP_OPS_STATS" />
+        <permission name="android.permission.CONTROL_KEYGUARD_SECURE_NOTIFICATIONS" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.USE_RESERVED_DISK" />
+        <permission name="android.permission.CONNECTIVITY_INTERNAL" />
+        <permission name="android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS" />
+        <permission name="android.permission.READ_DREAM_STATE" />
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.CHANGE_OVERLAY_PACKAGES" />
+        <permission name="android.permission.MEDIA_CONTENT_CONTROL" />
+        <permission name="android.permission.STOP_APP_SWITCHES" />
+        <permission name="android.permission.TETHER_PRIVILEGED" />
+        <permission name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS" />
+        <permission name="android.permission.MASTER_CLEAR" />
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED" />
+        <permission name="android.permission.RECEIVE_MEDIA_RESOURCE_USAGE" />
+        <permission name="android.permission.BATTERY_STATS" />
+        <permission name="android.permission.MANAGE_USB" />
+        <permission name="android.permission.REAL_GET_TASKS" />
+        <permission name="android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST" />
+        <permission name="android.permission.WRITE_DREAM_STATE" />
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME" />
+        <permission name="android.permission.OVERRIDE_WIFI_CONFIG" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY" />
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+        <permission name="android.permission.MODIFY_DAY_NIGHT_MODE" />
+        <permission name="android.permission.DUMP" />
+        <permission name="android.permission.UPDATE_APP_OPS_STATS" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
     </privapp-permissions>
 
     <privapp-permissions package="com.android.providers.downloads">
@@ -119,6 +165,11 @@ applications that come with the platform
         <permission name="android.permission.UPDATE_DEVICE_STATS"/>
         <permission name="android.permission.MODIFY_NETWORK_ACCOUNTING"/>
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.providers.downloads.ui">
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.music">
@@ -138,11 +189,18 @@ applications that come with the platform
     <privapp-permissions package="com.mediatek.voicecommand.vis">
         <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.voiceunlock">
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.phone">
         <permission name="com.mediatek.intent.action.ACTION_NETWORK_CHANGED"/>
         <permission name="com.mediatek.INTENT.IMS_STATE_CHANGED"/>
+        <permission name="android.permission.TETHER_PRIVILEGED" />
     </privapp-permissions>
 
     <privapp-permissions package="com.mediatek.wfo.impl">
@@ -165,22 +223,16 @@ applications that come with the platform
         <permission name="android.permission.FORCE_STOP_PACKAGES"/>
     </privapp-permissions>
 
-    <privapp-permissions package="com.mediatek.ppl">
-        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
-        <permission name="android.permission.MASTER_CLEAR"/>
-        <permission name="android.permission.MOUNT_FORMAT_FILESYSTEMS"/>
-        <permission name="android.permission.REBOOT"/>
-        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
-    </privapp-permissions>
-
-    <privapp-permissions package="com.mediatek.dataprotection">
-        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
-        <permission name="android.permission.MANAGE_USERS"/>
-    </privapp-permissions>
-
    <privapp-permissions package="com.orangelabs.rcs">
         <permission name="android.permission.MODIFY_PHONE_STATE"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.rcs.provisioning">
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.CONNECTIVITY_INTERNAL"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.fmradiodemo">
@@ -197,6 +249,7 @@ applications that come with the platform
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
         <permission name="android.permission.FORCE_STOP_PACKAGES"/>
         <permission name="android.permission.MASTER_CLEAR"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.mediatek.systemupdate">
@@ -211,12 +264,37 @@ applications that come with the platform
     <privapp-permissions package="com.android.deskclock">
         <permission name="android.permission.CRYPT_KEEPER"/>
     </privapp-permissions>
-    <!-- ifdef VENDOR_EDIT -->
-    <!-- Wensen.Luo@PSW.NW.REG.1607046, 2018/11/21 -->
-    <!-- add for rcsapp permission for CTS test  -->
-    <privapp-permissions package="com.nativeapp.rcsapp">
-        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
-        <permission name="android.permission.READ_LOGS"/>
+
+    <privapp-permissions package="com.mediatek.duraspeedml">
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
-    <!-- endif VENDOR_EDIT -->
+
+    <privapp-permissions package="com.mediatek.telephony">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.atci.service">
+        <permission name="android.permission.CALL_PRIVILEGED"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.presence">
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.ims.pco">
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.omacp">
+        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+        <permission name="android.permission.VIBRATE"/>
+        <permission name="android.permission.ACCESS_NETWORK_STATE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.WAKE_LOCK"/>
+        <permission name="android.permission.RECEIVE_WAP_PUSH"/>
+        <permission name="android.permission.FOREGROUND_SERVICE"/>
+    </privapp-permissions>
 </permissions>

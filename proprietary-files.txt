@@ -19,6 +19,7 @@ etc/init/init.vtservice.rc
 etc/permissions/privapp-permissions-mediatek.xml
 framework/mediatek-ims-extension-plugin.jar
 framework/mediatek-ims-legacy.jar
+framework/mediatek-ims-wwop-common.jar
 # Compiled from Alps against A11 libstagefright
 lib/libcomutils.so|0e9e2643001b7d32a661c0e47c5ebd526fac0a70
 lib/libimsma.so|5761c99bceadb6fb399f44c11d710a4b9d9e2f30

@@ -3,6 +3,18 @@ on init
     # bind mount libmtk-ril.so
     mount none /system/lib64/libmtk-ril.so /vendor/lib64/libmtk-ril.so bind
 
+service charger /charger
+    class charger
+    group system shell input graphics
+    seclabel u:r:charger:s0
+
+on charger
+    start kpoc_charger
+
+service kpoc_charger /system/bin/kpoc_charger
+    class charger
+
+
 service boot_lc /system/bin/logcat -db all -D -f /cache/boot_lc_full.log
     class main
     user root

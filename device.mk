@@ -155,6 +155,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ImsInit
 
+PRODUCT_PACKAGES += \
+    TrebleApp
+
+PRODUCT_COPY_FILES += \
+       $(LOCAL_PATH)/interfaces.xml:system/etc/permissions/interfaces.xml
+
+
+# Privapp-permissions whitelist for PhhTrebleApp
+PRODUCT_COPY_FILES += \
+       $(LOCAL_PATH)/privapp-permissions-me.phh.treble.app.xml:system/etc/permissions/privapp-permissions-me.phh.treble.app.xml
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oppo/CPH1859/CPH1859-vendor.mk)
 

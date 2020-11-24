@@ -88,6 +88,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Via
 
+# QKsms
+PRODUCT_PACKAGES += \
+    qksms
+
 # Removed Packages
 PRODUCT_PACKAGES += \
     RemovePackages \

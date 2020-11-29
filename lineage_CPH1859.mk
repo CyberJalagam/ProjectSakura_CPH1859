@@ -33,6 +33,7 @@ LAWNCHAIR_OPTOUT=true
 
 # ProjectSakura
 SAKURA_GAPPS := false
+SAKURA_OFFICIAL := true
 
 # Bootanimation
 TARGET_SCREEN_WIDTH := 1080

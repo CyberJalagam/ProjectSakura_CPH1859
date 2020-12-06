@@ -156,9 +156,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ImsInit
 
-PRODUCT_PACKAGES += \
-    TrebleApp
-
 PRODUCT_COPY_FILES += \
        $(LOCAL_PATH)/permissions/interfaces.xml:system/etc/permissions/interfaces.xml
 
